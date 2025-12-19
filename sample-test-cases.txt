@@ -1,0 +1,33 @@
+✅ True News Examples
+
+Headline: US economy grows at fastest pace in two years
+Article: The Commerce Department reported GDP growth at 4.1%, marking the strongest performance since 2014. Economists attributed the rise to consumer spending and exports.
+
+Headline: NASA announces discovery of new exoplanet
+Article: NASA scientists revealed a planet orbiting in the habitable zone of a distant star. The planet has conditions that may support liquid water.
+
+Headline: WHO approves malaria vaccine for children in Africa
+Article: The World Health Organization endorsed the first malaria vaccine, expected to save tens of thousands of young lives annually.
+
+Headline: Apple unveils new iPhone with improved battery life
+Article: Apple introduced its latest iPhone model featuring a faster processor, extended battery performance, and enhanced camera features.
+
+Headline: India successfully launches Chandrayaan-3 mission
+Article: ISRO launched Chandrayaan-3 aiming for a soft landing on the Moon, showcasing advancements in India’s space exploration.
+
+❌ Fake News Examples
+
+Headline: Drinking hot water every morning cures cancer
+Article: A viral post claims that drinking two cups of hot water daily eliminates cancer cells, though no medical evidence supports this.
+
+Headline: Government to ban using the internet at night
+Article: A rumor spread online that the government will restrict internet access after midnight to save electricity. No official notice exists.
+
+Headline: Alien spaceship spotted landing in New York City
+Article: Social media users shared blurry images claiming extraterrestrials had landed, but authorities confirmed it was a drone show.
+
+Headline: Chocolate found to make people live forever
+Article: An article falsely claims a new study proves chocolate consumption halts aging completely. Experts debunked it as misinformation.
+
+Headline: Bill Gates secretly microchipping vaccines
+Article: A conspiracy theory spread online alleged vaccines contain microchips funded by Bill Gates, which has been widely discredited.

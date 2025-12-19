@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        textarea {
+            width: 95%;
+            height: 180px;  /* optimized to fit screen */
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-bottom: 15px;
+        }
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+        }
+        input[type="submit"] {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        input[type="submit"]:hover {
+            background: #2c80b4;
+        }
+        .result-box {
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9fafc;
+            border: 1px solid #e0e0e0;
+        }
+        .result-box h3 {
+            margin: 8px 0;
+            color: #2c3e50;
+            font-size: 1rem;
+        }
+        .fake {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .true {
+            font-size: 18px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📰 Fake News Detection</h1>
+        <form action="/" method="POST">
+            <textarea name="txt" placeholder="Paste or type the news article text here..."></textarea>
+            <input type="submit" value="Check News">
+        </form>
+
+        {% if request.form['txt'] %}
+        <div class="result-box">
+            <h3>Entered Text:</h3>
+            <p>{{ request.form['txt'] }}</p>
+            <h3>Prediction Result:</h3>
+            {% if result == 0 %}
+                <p class="fake">❌ Fake News</p>
+            {% else %}
+                <p class="true">✅ True News</p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Fake News Detection</title>
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <textarea name="txt" rows="4" cols="50">
+            </textarea>
+            <input type="submit" name="submit">
+        </form>
+        <br/> 
+        <div>
+            <h3>Enterd Text is: </h3>
+            {{ request.form['txt'] }}
+        </div>
+        <div>
+            <h3> The Ml Model Found That is a:</h3>
+        <p>{% if result == 0 %}
+            <p style="color: red;">Fake News</p>
+           {% else  %}
+            <p><p style="color:seagreen;">True News</p></p>
+           {% endif  %}
+        </p> 
+        </div>    
+    </body>
+
+</html> -->
